@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #10141e;
+  color: white;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  background-color: #161d2f;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.sidebar .logo {
+  font-size: 1.8rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 1.4rem;
+}
+
+.sidebar .profile {
+  font-size: 1.5rem;
+}
+
+.sidebar ul li {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  opacity: 1;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+}
+
+header input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2b3146;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #2b3146;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.card .info {
+  padding: 10px;
+}
+
+.card .info p {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.card .info h4 {
+  font-size: 14px;
+  margin-top: 4px;
+}
